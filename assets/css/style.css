@@ -1,0 +1,154 @@
+/** Generales **/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/** Header **/
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4f291a;
+    padding-inline: 8vw;
+}
+.header__h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: xx-large;
+    color: #eee;
+}
+.header__nav {
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    color: #ccc;
+}
+.header__link-menu {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/** Main **/
+.main-content {
+    display: flex;
+    width:100%;
+    max-width: 840px;
+    margin:0 auto;
+    flex-grow: 1;
+    flex-direction: column;
+    align-content: center;
+    padding-inline: 10px;
+}
+.content-image{
+    width:100%;
+}
+/** Reserva Form **/
+.reserva-seccion{
+    display:flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    background-color: #ffdfd3;
+    margin-block-end: 25px;
+}
+.reserva-seccion img{
+    display:none;
+}
+@media (min-width: 768px){
+    .reserva-seccion img{
+        display:block;
+        width:100%;
+        object-fit: cover;
+        max-width:30%;
+    }
+}
+.reserva-form {
+    width:100%;
+    padding: 15px;
+    margin: 0 auto;
+    margin-block-end: 20px;
+}
+.reserva-form__label {
+    display: block;
+    margin-block: 0 20px;
+}
+.reserva-form__label-text {
+    display: block;
+}
+.reserva-form__components {
+    display: block;
+    border: 1px solid #4f291a;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.reserva-form__components:focus{
+    color:#ffffff;
+    background-color: #4f291a;
+    color-scheme: dark;
+}
+
+.reserva-form__components--textarea {
+    min-height:200px;
+}
+.reserva-form__submit {
+    color:#fff;
+    border: none;
+    background-color: #2f3d3d;
+    padding-block: 10px;
+    padding-inline: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.reserva-form__submit:hover {
+    color:#ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/** GUI Mensajes **/
+.gui-message__success{
+    padding:10px;
+    background-color: #69e98b;
+    margin-block-end: 20px;
+}
+.gui-message__success p{
+    border-bottom:1px solid white;
+    font-style: italic;
+}
+.gui-message-w__length{
+    display: none;
+    padding:10px;
+    background-color: #dee969;
+    margin-block: 10px;
+}
+
+/** Footer **/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding-block: 10px;
+    padding-inline: 10px;
+    min-height: 100px;
+}
+.footer__link {
+    color: #eee;
+}
+.parrafo{
+    padding: 10px;
+    color: white;
+    background-color:#222
+}
